@@ -22,7 +22,7 @@ jobs:
           java-version: 1.8
 
       - name: Build
-        run: mvn package -Dmaven.test.skip=true
+        run: mvn package -Dmaven.test.skip=true # Build (compiles) the source code
 
       - name: Unit Test
-        run: mvn test
+        run: mvn test #execute the testing framework
